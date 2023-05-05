@@ -1,26 +1,60 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <AppHeader :menu-items="menuItems"/>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// eslint-disable-next-line no-unused-vars
+import { mapGetters } from "vuex";
+import { AppHeader } from "@/components";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AppHeader,
+  },
+  data() {
+    return {
+      menuItems: [],
+    };
+    },
+  computed: {
+    ...mapGetters(["menuItems"]),
+  },
+  created() {
+    this.menuItems = this.$store.getters.menuItems;
+  },
+};
 </script>
 
 <style>
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
+}
+#app > header,
+main,
+footer {
+  padding: 0 80px;
+}
+
+.container {
+  margin-top: 32px;
 }
 </style>
