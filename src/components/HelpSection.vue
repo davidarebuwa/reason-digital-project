@@ -134,6 +134,6 @@
   border-radius: 5px;
   font-weight: 550;
   cursor: pointer;
-  margin-top: 16px;
+  margin-top: -16px;
 }
 </style>
