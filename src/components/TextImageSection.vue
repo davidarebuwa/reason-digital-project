@@ -67,7 +67,7 @@
 
 .content-title {
     display: flex;
-    color: #fff;;
+    color: #fff;
     font-weight: bold;
     font-size: 24px;
     text-align: left;
@@ -108,6 +108,49 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  .split-cover-section {
+    height: auto;
+    flex-direction: column;
+  }
 
+  .split-cover-section-left {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .split-cover-section-right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .content-title {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+  }
+
+  .content-description {
+    margin-top: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16px;
+    line-height: 20px;
+    }
+
+    .content-button {
+        margin-top: 8px;
+        margin-left: 5%;
+        padding: 8px;
+    }
+
+    .content-button button {
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+
+}
 
 </style>

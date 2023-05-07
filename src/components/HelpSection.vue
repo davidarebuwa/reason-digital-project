@@ -37,17 +37,19 @@
 
 <style scoped>
 .help-section {
-  width: auto;
-  height: 30vh;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
   background-color: #ececec;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .help-section-content {
   width: 100%;
-  height: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,10 +79,11 @@
 
 .content-selection-section {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .content-selection-section-item {
@@ -92,6 +95,7 @@
   margin-top: 16px;
   align-items: center;
   background-color: #fff;
+  flex-basis: 100%;
 }
 
 .content-selection-section-options {
@@ -109,6 +113,7 @@
   border: none;
   margin: 0 10px;
   margin-top: -12px;
+  flex-basis: 50%;
 }
 
 .content-selection-section-item-button {
@@ -117,10 +122,11 @@
   text-align: center;
   margin-top: 16px;
   align-items: center;
+  flex-basis: 100%;
 }
 
 .content-selection-section-item-button button {
-  width: 200px;
+  width: 100%;
   height: 40px;
   color: #fff;
   background-color: #ae3d4e;
@@ -128,6 +134,6 @@
   border-radius: 5px;
   font-weight: 550;
   cursor: pointer;
-  margin-top: -26px;
+  margin-top: 16px;
 }
 </style>

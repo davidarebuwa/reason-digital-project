@@ -22,27 +22,27 @@
 
 <style scoped>
 .cover-image-section {
-    width: auto;
-    height: 70vh;
-    background-image: url('../assets/cover-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/cover-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .cover-image-section-content {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  max-width: 80%;
 }
+
 
 .content-title {
     width: 100%;
@@ -97,6 +97,28 @@
     color: #AE3D4E;
 }
 
+@media only screen and (max-width: 768px) {
+  .content-title {
+    font-size: 32px;
+    margin-top: 5%;
+    margin-left: 15px;
+  }
+  
+  .content-description {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  
+  .content-button {
+    margin-left: 15px;
+  }
+  
+  .content-button button {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
 
 
 </style>

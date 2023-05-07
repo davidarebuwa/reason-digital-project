@@ -66,101 +66,80 @@
 </script>
 
 <style scoped>
-.services-section {
-    width: auto;
-    height: 100vh;
-    background-color: #547B8D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 600px) {
+  .services-card {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
 }
 
-.services-section-content {
-    width: 100%;
-    height: 100%;
+/* For screens 600px and larger (web) */
+@media screen and (min-width: 600px) {
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #547B8D;
+
+  }
+
+  .services-section-content {
+    width: 80%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    margin: 0 auto;
+    padding: 50px 0;
+  }
 
-.content-title {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    color: #fff;
-    font-weight: bold;
+  .content-title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .content-description {
     font-size: 24px;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 16px;
-}
+    margin-bottom: 50px;
+  }
 
-.content-description {
+  .services-cards-section {
     width: 100%;
     display: flex;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    margin-left: 16px;
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
 
-.content-button {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.services-cards-section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.services-card {
-    width: 300px;
-    height: 300px;
+  .services-card {
+    width: 30%;
+    height: 400px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 10px;
-}
+  }
 
-.services-card-title {
-    width: 100%;
-    height: 100px;
-    color: #000;
-    font-weight: bold;
+  .services-card-title {
     font-size: 24px;
-    text-align: center;
-    margin-top: 10px;
-}
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
-.services-card-description {
-    width: 100%;
-    color: #000;
-    font-size: 16px;
-    text-align: center;
-}
+  .services-card-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-.services-card-button {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
+  .content-button {
+    margin-bottom: 50px;
+  }
 
-.button {
+  .button {
     width: 200px;
     height: 50px;
     background-color: #fff;
@@ -170,17 +149,15 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #AE3D4E;
+    color: #fff;
+    border: 2px solid #AE3D4E;
+  }
 }
 
-.button a {
-    text-decoration: none;
-    color: #AE3D4E;
-}
-
-.button:hover {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-}
 
 </style>
