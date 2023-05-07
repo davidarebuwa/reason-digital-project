@@ -250,6 +250,13 @@
     color: #fff;
     border: 2px solid #AE3D4E;
   }
+
+  .button a {
+    color: #AE3D4E;
+    text-decoration: none;
+  }
+
+  
 }
 
  </style>
