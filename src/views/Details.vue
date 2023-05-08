@@ -7,12 +7,14 @@
         </p>
         <img 
         class="details-section-image"
+        loading="lazy"
         src="../assets/detail-cover-image.jpg" alt="placeholder image" />
         <p class="details-section-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc.
         </p>
         <img 
         class="details-section-image"
+        loading="lazy"
         src="../assets/detail-image.jpg" alt="placeholder image" />
         <p class="details-section-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc. Donec euismod, nisl eget ultricies ultrices, nunc nunc aliquam nunc, vitae aliquam nunc nunc eget nunc.

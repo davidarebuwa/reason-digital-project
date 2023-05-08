@@ -1,7 +1,9 @@
 <template>
     <header class="app-header">
        <div class="app-header-item">
-              <img class="app-logo" src="../assets/good-things-foundation-logo.png" alt="App logo">
+              <img class="app-logo" src="../assets/good-things-foundation-logo.png" 
+              loading="lazy"
+              alt="App logo">
        </div>
        <div class="app-header-item">
               <ul>

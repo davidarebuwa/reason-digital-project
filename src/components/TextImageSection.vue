@@ -2,7 +2,9 @@
 
     <div class="split-cover-section">
         <div class="split-cover-section-left">
-            <img src="../assets/split-cover-image-left.jpg" alt="split-cover-image-left" class="split-cover-image-left">
+            <img src="../assets/split-cover-image-left.jpg" alt="split-cover-image-left"
+            loading="lazy"
+             class="split-cover-image-left">
         </div>
         <div class="split-cover-section-right">
             <div class="split-cover-section-right-content">
